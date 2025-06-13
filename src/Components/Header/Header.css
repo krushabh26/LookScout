@@ -1,0 +1,262 @@
+.header {
+  background-color: #2b63d9;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 90%;
+  margin: auto;
+  background-color: #2b63d9;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.logo {
+  width: 20%;
+}
+
+.nav-list {
+  width: 60%;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.register {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+  justify-content: space-around;
+}
+
+.signup {
+  background-color: #437ff7;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.info {
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+.text_section {
+  width: 65%;
+  background-color: #2b63d9;
+  padding: 100px 60px;
+}
+
+.heading > p {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 60px 50px 20px 50px;
+}
+
+.para {
+  color: #b1ccfa;
+  font-size: 16px;
+  padding: 0px 50px 20px 50px;
+}
+.notify {
+  padding: 0px 50px 20px 50px;
+}
+.notify > button {
+  background-color: #437ff7;
+  color: white;
+  width: 25%;
+  padding: 10px 5px 10px 5px;
+  border-radius: 5px;
+}
+
+.supports {
+  padding: 0px 50px 20px 50px;
+}
+
+.supports > p {
+  color: white;
+  font-size: 11px;
+  padding: 30px 0px 0px 0px;
+}
+
+.support_list {
+  width: 500px;
+  padding: 30px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.photo_section {
+  width: 35%;
+  background-color: #3a71e8;
+  padding: 60px;
+}
+
+.photo_section > img {
+  position: absolute;
+  right: 270px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px;
+    position: relative;
+  }
+  .logo {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  .nav-list {
+    width: 100%;
+    margin-bottom: 10px;
+    display: none;
+  }
+  .nav-list.open {
+    display: block;
+    background-color: #2b63d9;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  .list {
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .register {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+  .text_section {
+    width: 100%;
+    padding: 60px 20px;
+  }
+  .heading > p {
+    font-size: 36px;
+    padding: 40px 20px 20px 20px;
+  }
+  .para {
+    padding: 0px 20px 20px 20px;
+    font-size: 14px;
+  }
+  .notify {
+    padding: 0px 20px 20px 20px;
+  }
+  .notify > button {
+    width: auto;
+    padding: 8px 12px;
+  }
+  .supports {
+    padding: 0px 20px 20px 20px;
+  }
+  .support_list {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .photo_section {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+  }
+  .photo_section > img {
+    position: relative;
+    right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 25px;
+    z-index: 20;
+  }
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  .bar.change:nth-child(1) {
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+  .bar.change:nth-child(2) {
+    opacity: 0;
+  }
+  .bar.change:nth-child(3) {
+    transform: rotate(45deg) translate(-7px, -6px);
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .logo {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  .nav-list {
+    width: 100%;
+  }
+  .list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .register {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+  .text_section {
+    padding: 40px 10px;
+  }
+  .heading > p {
+    font-size: 28px;
+    padding: 20px 10px 10px 10px;
+  }
+  .para {
+    font-size: 12px;
+    padding: 0px 10px 10px 10px;
+  }
+  .notify {
+    padding: 0px 10px 10px 10px;
+  }
+  .notify > button {
+    width: 100%;
+    padding: 8px 12px;
+  }
+  .supports {
+    padding: 0px 10px 10px 10px;
+  }
+  .support_list {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .photo_section {
+    padding: 10px;
+  }
+  .photo_section > img {
+    max-width: 100%;
+    height: auto;
+  }
+  .hamburger {
+    display: block;
+  }
+}

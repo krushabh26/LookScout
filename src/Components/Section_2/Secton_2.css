@@ -1,0 +1,105 @@
+.section_2 {
+  width: 90%;
+  margin: auto;
+  padding: 100px;
+}
+
+.messaging {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.bold1-text {
+  width: 100%;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.messaging-text {
+  color: #5e6c7d;
+  padding-top: 20px;
+  font-size: small;
+}
+.content {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.card1-content {
+  padding: 10px;
+}
+
+.left {
+  width: 40%;
+}
+.right {
+  padding-top: 40px;
+  width: 40%;
+}
+
+.card-1 {
+  display: flex;
+  padding-top: 30px;
+  /* width: 35%; */
+}
+.card-icon {
+  width: 30%;
+}
+.bold-1-text {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 10px 0px 0px 0px;
+}
+.card-1-text {
+  color: #5e6c7d;
+  font-size: 16px;
+  padding: 15px 0px;
+}
+
+.card-icon-button {
+  color: #437ff7;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .section_2 {
+    padding: 60px 40px;
+  }
+  .messaging {
+    width: 80%;
+  }
+  .bold1-text {
+    font-size: 32px;
+  }
+  .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .left, .right {
+    width: 100%;
+  }
+  .bold-1-text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section_2 {
+    padding: 40px 20px;
+  }
+  .messaging {
+    width: 100%;
+  }
+  .bold1-text {
+    font-size: 24px;
+  }
+  .content {
+    gap: 20px;
+  }
+  .bold-1-text {
+    font-size: 18px;
+  }
+}
